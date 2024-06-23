@@ -1,0 +1,64 @@
+{
+  "useState": {
+    "prefix": "useState",
+    "body": [
+      "const [ ${1:first}, set${1/(.*)/${1:/capitalize}/} ] = useState(${0:initialState});"
+    ]
+  },
+
+  "useTheme": {
+    "prefix": "useTheme",
+    "body": ["const theme = useTheme();"]
+  },
+
+  "useAppSelector": {
+    "prefix": "useAppSelector useSelector",
+    "body": ["const ${0:name} = useAppSelector(state=>state.${1:selector});"]
+  },
+
+  "useNavigate": {
+    "prefix": "useNavigate",
+    "body": ["const navigate = useNavigate();"]
+  },
+
+  "useAppDispatch": {
+    "prefix": "useAppDispatch useDispatch",
+    "body": ["const dispatch = useAppDispatch();"]
+  },
+
+  "useIsMounted": {
+    "prefix": "useIsMounted",
+    "body": ["const isMounted = useIsMounted();"]
+  },
+
+  "useHistory": {
+    "prefix": "useHistory",
+    "body": ["const navigate = useNavigate();"]
+  },
+
+  "useEffect": {
+    "prefix": "useEffect",
+    "body": ["useEffect(() => {", "\t$0", "\treturn () => { };", "}, []);"]
+  },
+
+  "useForm": {
+    "prefix": "useForm",
+    "body": [
+      "const [ formValues, handleInputChange, reset] = useForm(${1:initialForm});"
+    ]
+  },
+
+  "useDialog": {
+    "prefix": "useDialog",
+    "body": [
+      "const [ ${1:Dialog}, handle${1/(.*)/${1:/capitalize}/} ] = useDialog();"
+    ]
+  },
+
+  "useDialogOptions": {
+    "prefix": "useDialogOptions",
+    "body": [
+      "const [ ${1:Dialog}, handle${1/(.*)/${1:/capitalize}/}, option${1/(.*)/${1:/capitalize}/}] = useDialogOptions({ confirmMessage: 'Seleccionado!' });"
+    ]
+  }
+}

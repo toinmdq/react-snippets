@@ -1,0 +1,17 @@
+{
+  "new Next Page": {
+    "prefix": "nextPage",
+    "body": [
+      "\t\t",
+      "export default function ${TM_DIRECTORY/.*\\/(.)(.+)$/${1:/upcase}$2/}() {",
+      "\t\t",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t\t$0",
+      "\t\t</>",
+      "\t);",
+      "};",
+      ""
+    ]
+  }
+}

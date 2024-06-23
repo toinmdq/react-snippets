@@ -1,0 +1,11 @@
+{
+  "TODO fast": {
+    "prefix": "todo",
+    "body": ["// TODO: $1"]
+  },
+
+  "FIX fast": {
+    "prefix": "fix",
+    "body": ["// FIXME: $1"]
+  }
+}

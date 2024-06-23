@@ -1,0 +1,35 @@
+{
+  "rafc": {
+    "prefix": "rafc",
+    "body": [
+      "",
+      "export const ${TM_FILENAME_BASE} = (): JSX.Element => {",
+      "\t\t",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t\t$0",
+      "\t\t</>",
+      "\t);",
+      "};"
+    ]
+  },
+
+  "rafc screen": {
+    "prefix": "rafcc screen",
+    "body": [
+      "",
+      "",
+      "",
+      "export const ${TM_FILENAME_BASE} = (): JSX.Element => {",
+      "\t\t",
+      "\treturn (",
+      "\t\t<ScreenContainer title=\"\" subtitle=\"\" Icon={}>",
+      "\t\t\t",
+      "\t\t\t$0",
+      "\t\t\t",
+      "\t\t</ScreenContainer>",
+      "\t);",
+      "};"
+    ]
+  }
+}
