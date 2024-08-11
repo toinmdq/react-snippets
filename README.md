@@ -43,7 +43,7 @@ E.g.:
     "prefix": "nextPage",
     "body": [
       "\t\t",
-      "export default function ${TM_DIRECTORY/.*\\/(.)(.+)$/${1:/upcase}$2/}() {",
+      "export default function ${TM_DIRECTORY/.*\\/(.)(.+)$/${1:/upcase}$2/}Page() {",
       "\t\t",
       "\treturn (",
       "\t\t<>",
